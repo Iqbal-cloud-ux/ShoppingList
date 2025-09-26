@@ -17,7 +17,7 @@ fun Title(modifier: Modifier = Modifier) {
         text = "Shopping List",
         style = MaterialTheme.typography.headlineLarge.copy(
             fontWeight = FontWeight.Bold,
-            fontSize = 32.sp,
+            fontSize = 28.sp,
             color = MaterialTheme.colorScheme.primary
         ),
         modifier = modifier

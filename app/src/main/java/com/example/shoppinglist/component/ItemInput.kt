@@ -24,14 +24,17 @@ fun ItemInput(
         OutlinedTextField(
             value = text,
             onValueChange = onTextChange,
-            label = { Text("Add new item") },
+            label = { Text("Add new Item") },
             modifier = Modifier.weight(1f),
-            shape = RoundedCornerShape(16.dp),
+            shape = RoundedCornerShape(12.dp),
             singleLine = true
         )
         Spacer(modifier = Modifier.width(8.dp))
-        Button(onClick = onAddItem) {
-            Icon(imageVector = Icons.Filled.Add, contentDescription = "Add Item")
+        Button(
+            onClick = onAddItem,
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+        ) {
+            Icon(imageVector = Icons.Default.Add, contentDescription = "Add Item")
             Spacer(modifier = Modifier.width(4.dp))
             Text("Add")
         }
